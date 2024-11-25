@@ -1,0 +1,350 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0-android": {},
+    "net6.0-ios": {},
+    "net6.0-maccatalyst": {},
+    "net6.0-windows10.0.19041": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "net6.0-android": [
+      "Dapper >= 2.0.123",
+      "Microsoft.Data.SqlClient >= 5.1.0",
+      "Microsoft.Extensions.Configuration >= 7.0.0",
+      "Microsoft.Extensions.Configuration.Binder >= 7.0.2",
+      "Microsoft.Extensions.Configuration.Json >= 7.0.0",
+      "Newtonsoft.Json >= 13.0.2",
+      "System.Data.SqlClient >= 4.8.5",
+      "sqlite-net-pcl >= 1.8.116"
+    ],
+    "net6.0-ios": [
+      "Dapper >= 2.0.123",
+      "Microsoft.Data.SqlClient >= 5.1.0",
+      "Microsoft.Extensions.Configuration >= 7.0.0",
+      "Microsoft.Extensions.Configuration.Binder >= 7.0.2",
+      "Microsoft.Extensions.Configuration.Json >= 7.0.0",
+      "Newtonsoft.Json >= 13.0.2",
+      "System.Data.SqlClient >= 4.8.5",
+      "sqlite-net-pcl >= 1.8.116"
+    ],
+    "net6.0-maccatalyst": [
+      "Dapper >= 2.0.123",
+      "Microsoft.Data.SqlClient >= 5.1.0",
+      "Microsoft.Extensions.Configuration >= 7.0.0",
+      "Microsoft.Extensions.Configuration.Binder >= 7.0.2",
+      "Microsoft.Extensions.Configuration.Json >= 7.0.0",
+      "Newtonsoft.Json >= 13.0.2",
+      "System.Data.SqlClient >= 4.8.5",
+      "sqlite-net-pcl >= 1.8.116"
+    ],
+    "net6.0-windows10.0.19041": [
+      "Dapper >= 2.0.123",
+      "Microsoft.Data.SqlClient >= 5.1.0",
+      "Microsoft.Extensions.Configuration >= 7.0.0",
+      "Microsoft.Extensions.Configuration.Binder >= 7.0.2",
+      "Microsoft.Extensions.Configuration.Json >= 7.0.0",
+      "Newtonsoft.Json >= 13.0.2",
+      "System.Data.SqlClient >= 4.8.5",
+      "sqlite-net-pcl >= 1.8.116"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Mukesh\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Mukesh\\Downloads\\MAUI-Crud\\MAUI-Crud\\MauiCrudUsingApi\\MauiCrudUsingDapper.csproj",
+      "projectName": "MauiCrudUsingDapper",
+      "projectPath": "C:\\Users\\Mukesh\\Downloads\\MAUI-Crud\\MAUI-Crud\\MauiCrudUsingApi\\MauiCrudUsingDapper.csproj",
+      "packagesPath": "C:\\Users\\Mukesh\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mukesh\\Downloads\\MAUI-Crud\\MAUI-Crud\\MauiCrudUsingApi\\obj\\",
+      "projectStyle": "PackageReference",
+      "crossTargeting": true,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Mukesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0-android",
+        "net6.0-ios",
+        "net6.0-maccatalyst",
+        "net6.0-windows10.0.19041.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0-android": {
+          "targetAlias": "net6.0-android",
+          "projectReferences": {}
+        },
+        "net6.0-ios": {
+          "targetAlias": "net6.0-ios",
+          "projectReferences": {}
+        },
+        "net6.0-maccatalyst": {
+          "targetAlias": "net6.0-maccatalyst",
+          "projectReferences": {}
+        },
+        "net6.0-windows10.0.19041": {
+          "targetAlias": "net6.0-windows10.0.19041.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "all"
+      },
+      "SdkAnalysisLevel": "9.0.100"
+    },
+    "frameworks": {
+      "net6.0-android": {
+        "targetAlias": "net6.0-android",
+        "dependencies": {
+          "Dapper": {
+            "target": "Package",
+            "version": "[2.0.123, )"
+          },
+          "Microsoft.Data.SqlClient": {
+            "target": "Package",
+            "version": "[5.1.0, )"
+          },
+          "Microsoft.Extensions.Configuration": {
+            "target": "Package",
+            "version": "[7.0.0, )"
+          },
+          "Microsoft.Extensions.Configuration.Binder": {
+            "target": "Package",
+            "version": "[7.0.2, )"
+          },
+          "Microsoft.Extensions.Configuration.Json": {
+            "target": "Package",
+            "version": "[7.0.0, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.2, )"
+          },
+          "System.Data.SqlClient": {
+            "target": "Package",
+            "version": "[4.8.5, )"
+          },
+          "sqlite-net-pcl": {
+            "target": "Package",
+            "version": "[1.8.116, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100\\RuntimeIdentifierGraph.json"
+      },
+      "net6.0-ios": {
+        "targetAlias": "net6.0-ios",
+        "dependencies": {
+          "Dapper": {
+            "target": "Package",
+            "version": "[2.0.123, )"
+          },
+          "Microsoft.Data.SqlClient": {
+            "target": "Package",
+            "version": "[5.1.0, )"
+          },
+          "Microsoft.Extensions.Configuration": {
+            "target": "Package",
+            "version": "[7.0.0, )"
+          },
+          "Microsoft.Extensions.Configuration.Binder": {
+            "target": "Package",
+            "version": "[7.0.2, )"
+          },
+          "Microsoft.Extensions.Configuration.Json": {
+            "target": "Package",
+            "version": "[7.0.0, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.2, )"
+          },
+          "System.Data.SqlClient": {
+            "target": "Package",
+            "version": "[4.8.5, )"
+          },
+          "sqlite-net-pcl": {
+            "target": "Package",
+            "version": "[1.8.116, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100\\RuntimeIdentifierGraph.json"
+      },
+      "net6.0-maccatalyst": {
+        "targetAlias": "net6.0-maccatalyst",
+        "dependencies": {
+          "Dapper": {
+            "target": "Package",
+            "version": "[2.0.123, )"
+          },
+          "Microsoft.Data.SqlClient": {
+            "target": "Package",
+            "version": "[5.1.0, )"
+          },
+          "Microsoft.Extensions.Configuration": {
+            "target": "Package",
+            "version": "[7.0.0, )"
+          },
+          "Microsoft.Extensions.Configuration.Binder": {
+            "target": "Package",
+            "version": "[7.0.2, )"
+          },
+          "Microsoft.Extensions.Configuration.Json": {
+            "target": "Package",
+            "version": "[7.0.0, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.2, )"
+          },
+          "System.Data.SqlClient": {
+            "target": "Package",
+            "version": "[4.8.5, )"
+          },
+          "sqlite-net-pcl": {
+            "target": "Package",
+            "version": "[1.8.116, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100\\RuntimeIdentifierGraph.json"
+      },
+      "net6.0-windows10.0.19041": {
+        "targetAlias": "net6.0-windows10.0.19041.0",
+        "dependencies": {
+          "Dapper": {
+            "target": "Package",
+            "version": "[2.0.123, )"
+          },
+          "Microsoft.Data.SqlClient": {
+            "target": "Package",
+            "version": "[5.1.0, )"
+          },
+          "Microsoft.Extensions.Configuration": {
+            "target": "Package",
+            "version": "[7.0.0, )"
+          },
+          "Microsoft.Extensions.Configuration.Binder": {
+            "target": "Package",
+            "version": "[7.0.2, )"
+          },
+          "Microsoft.Extensions.Configuration.Json": {
+            "target": "Package",
+            "version": "[7.0.0, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.2, )"
+          },
+          "System.Data.SqlClient": {
+            "target": "Package",
+            "version": "[4.8.5, )"
+          },
+          "sqlite-net-pcl": {
+            "target": "Package",
+            "version": "[1.8.116, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.Windows.SDK.NET.Ref",
+            "version": "[10.0.19041.52, 10.0.19041.52]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.Windows.SDK.NET.Ref.Windows": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1012",
+      "level": "Error",
+      "message": "Platform version is not present for one or more target frameworks, even though they have specified a platform: net6.0-android, net6.0-ios, net6.0-maccatalyst"
+    }
+  ]
+}

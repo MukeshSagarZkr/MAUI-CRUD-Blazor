@@ -1,0 +1,79 @@
+﻿@page "/student/Create"
+@page "/student/Update/{studentId:int}"
+@using TAndCal.Model;
+@using TAndCal.Utility.Data.Service.Interface;
+@inject IStudentService _studentService
+@inject Microsoft.AspNetCore.Components.NavigationManager navigation
+<h3>Add Students</h3>
+
+<div class="row">
+    <div class="col-md-5">
+        <form>
+            <div class="did-floating-label-content">
+                <input class="did-floating-input" type="text" placeholder=" " @bind="student.Name">
+                <label class="did-floating-label">Name</label>
+            </div>
+            <div class="did-floating-label-content">
+                <input class="did-floating-input" type="number" placeholder=" " @bind="student.RollNo">
+                <label class="did-floating-label">Roll No</label>
+            </div>
+            <div class="did-floating-label-content">
+                <input class="did-floating-input" type="text" placeholder=" " @bind="student.Class">
+                <label class="did-floating-label">Class</label>
+            </div>
+            <div class="did-floating-label-content">
+                <input class="did-floating-input" type="text" placeholder=" " @bind="student.Address">
+                <label class="did-floating-label">Address</label>
+            </div>
+          
+            <div class="form-group">
+                <button type="submit" class="button-outline button-outline-info" @onclick="@(() => Createstudent())">Save</button>
+                <button class="button-outline button-outline-danger" style="margin-left:20px;" @onclick="@cancel">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+@code {
+    [Parameter]
+    public int studentId { get; set; }
+
+    StudentModel student = new StudentModel();
+    protected override async Task OnInitializedAsync()
+    {
+        if (studentId != 0)
+        {
+            student.Id = studentId;
+            var studentM = await _studentService.Get(studentId);
+            student = studentM;
+        }
+    }
+    protected async Task Createstudent()
+    {
+
+        bool va;
+        if (student.Id != 0)
+        {
+            va = await _studentService.Update(student);
+        }
+        else
+        {
+           var rs = await _studentService.Insert(student);
+            va = true;
+        }
+            navigation.NavigateTo("/");
+            if (va)
+            {
+              
+                this.StateHasChanged();
+            navigation.NavigateTo("/", true);
+            }
+            else
+            {
+                
+            }
+        }
+        void cancel()
+        {
+            navigation.NavigateTo("/",true);
+        }
+    }
